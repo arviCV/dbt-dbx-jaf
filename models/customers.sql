@@ -17,7 +17,7 @@ orders as (
         store_id,
         subtotal,
         tax_paid,
-        order_total,
+        order_total
 
     from jaffle_shop.orders
 
@@ -42,7 +42,7 @@ final as (
 
     select
         customers.customer,
-        customers.name,
+        customers.cutomer_name,
         customer_orders.minimum_order_value,
         customer_orders.maximum_order_value,
         coalesce(customer_orders.number_of_orders, 0) as number_of_orders
