@@ -1,25 +1,12 @@
 with customers as (
 
-    select
-        id as customer,
-        name as cutomer_name
-
-    from raw.jaffle_shop.customers
+    select * from {{ ref('stg_jaffle_shop__customers') }}
 
 ),
 
 orders as (
 
-    select
-        id as order_id,
-        customer,
-        ordered_at,
-        store_id,
-        subtotal,
-        tax_paid,
-        order_total
-
-    from jaffle_shop.orders
+    select * from {{ ref('stg_jaffle_shop__orders') }}
 
 ),
 

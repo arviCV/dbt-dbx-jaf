@@ -7,4 +7,4 @@ select
     tax_paid,
     order_total
 
-from jaffle_shop.orders
+from raw.jaffle_shop.orders
