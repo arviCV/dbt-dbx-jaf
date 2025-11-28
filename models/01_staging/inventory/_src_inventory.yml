@@ -1,0 +1,6 @@
+sources:
+  - name: inventory
+    database: raw
+    schema: inventory
+    tables:
+      - name: stores
