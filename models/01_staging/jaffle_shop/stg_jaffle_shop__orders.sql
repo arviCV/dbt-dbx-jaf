@@ -7,4 +7,4 @@ select
     tax_paid,
     order_total
 
-from raw.jaffle_shop.orders
+from {{ source('jaffle_shop', 'orders') }}

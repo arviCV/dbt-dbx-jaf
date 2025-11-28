@@ -4,4 +4,4 @@ select
     opened_at,
     tax_rate
 
-from raw.inventory.stores
+from {{ source('inventory', 'stores') }}
