@@ -5,14 +5,18 @@ sources:
     database: raw
     tables:
       - name: customers
+        description : "Information about the customers"
         columns:
           - name: id
+            description : "Information about the customer id"
             data_tests:
               - not_null
               - unique
       - name: orders
+        description : "Information about the orders"
         columns:
           - name: id
+            description : "Information about the order id"
             data_tests:
               - not_null
               - unique

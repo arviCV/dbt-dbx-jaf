@@ -4,10 +4,14 @@ sources:
     schema: inventory
     tables:
       - name: stores
+        description : "Information about the order id"
         columns:
           - name: id
+            description : "Information about the store id"
           - name: opened_at
+            description : "Information about the time when store opened"
           - name: name
+            description : "Information about the location of the store"
             data_tests:
               - not_null
               - accepted_values:
@@ -19,3 +23,4 @@ sources:
                     - New Orleans
                     - Los Angeles
           - name: tax_rate
+            description : "Information about the tax rate at the store"

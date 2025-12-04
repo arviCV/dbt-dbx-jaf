@@ -2,22 +2,26 @@ models:
   - name: stg_jaffle_shop__customers
     columns:
       - name: customer
+        description : "Information about the customers"
         data_tests:
           - unique
           - not_null
   - name: stg_jaffle_shop__orders
     columns:
       - name: order_id
+        description : "Information about the order id"
         data_tests:
           - unique
           - not_null
       - name: store_id
+        description : "Information about the store id"
         data_tests:
           - accepted_values:
               values:
                 - 4b6c2304-2b9e-41e4-942a-cf11a1819378
                 - 40e6ddd6-b8f6-4e17-8bd6-5e53966809d2
       - name: customer
+        description : "Information about the customer"
         data_tests:
           - relationships:
               field: customer
