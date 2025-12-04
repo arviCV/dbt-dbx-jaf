@@ -1,0 +1,20 @@
+models:
+  - name: stg_inventory__stores
+    columns:
+      - name: store_id
+        description : "Information about the store id "
+        data_tests:
+          - unique
+          - not_null
+      - name: location
+        description : "Information about the location of the store"
+        data_tests:
+          - not_null
+      - name: opened_at
+        description : "Information about the opened at time"
+        data_tests:
+          - not_null
+      - name: tax_rate
+        description : "Information about the tax_rate"
+        data_tests:
+          - not_null

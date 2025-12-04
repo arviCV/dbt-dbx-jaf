@@ -29,7 +29,7 @@ final as (
 
     select
         customers.customer,
-        customers.cutomer_name,
+        customers.customer_name,
         customer_orders.minimum_order_value,
         customer_orders.maximum_order_value,
         coalesce(customer_orders.number_of_orders, 0) as number_of_orders
